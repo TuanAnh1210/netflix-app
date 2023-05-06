@@ -22,19 +22,28 @@ export default Header;
 
 const Container = styled.div`
   padding: 0 4rem;
+  @media (max-width: 576px) {
+    padding: 0 1rem;
+  }
+
   .logo {
     img {
-      height: 5rem;
+      height: 72px;
     }
   }
   button {
-    padding: 0.5rem 1rem;
+    padding: 8px 18px;
     background-color: #e50914;
     border: none;
     cursor: pointer;
     color: white;
     border-radius: 0.2rem;
     font-weight: bolder;
-    font-size: 1.05rem;
+    font-size: 16px;
+
+    @media (max-width: 576px) {
+      padding: 6px 8px;
+      font-size: 14px;
+    }
   }
 `;
